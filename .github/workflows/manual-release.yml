@@ -52,7 +52,7 @@ jobs:
       - name: Publish the Docker image
         run: |
           suffix=$(date +%s)
-          docker tag spark:spark-3.2.2 ghcr.io/zettablockorg/spark:spark-3.2.2-$suffix
+          docker tag spark:spark-3.2.2 ghcr.io/zettablock/spark:spark-3.2.2-$suffix
           docker push ghcr.io/zettablock/spark:spark-3.2.2-$suffix
-          docker tag spark-py:pyspark-3.2.2 ghcr.io/zettablockorg/spark:pyspark-3.2.2-$suffix
+          docker tag spark-py:pyspark-3.2.2 ghcr.io/zettablock/spark:pyspark-3.2.2-$suffix
           docker push ghcr.io/zettablock/spark:pyspark-3.2.2-$suffix
