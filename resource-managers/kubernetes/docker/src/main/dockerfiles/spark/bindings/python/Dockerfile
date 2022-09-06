@@ -28,6 +28,7 @@ RUN apt-get update && \
     apt install -y python3 python3-pip && \
     pip3 install --upgrade pip setuptools && \
     pip3 install --upgrade hexbytes==0.3.0 && \
+    pip3 install --upgrade web3==5.30.0 && \
     # Removed the .cache to save space
     rm -r /root/.cache && rm -rf /var/cache/apt/*
 
