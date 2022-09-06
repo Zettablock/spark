@@ -39,6 +39,7 @@ jobs:
           ls -l
           cd spark-bin-zettablock
           ./bin/docker-image-tool.sh -t spark-3.2.2 build
+          cat kubernetes/dockerfiles/spark/bindings/python/Dockerfile
           ./bin/docker-image-tool.sh -t pyspark-3.2.2 -p kubernetes/dockerfiles/spark/bindings/python/Dockerfile build
           docker images
 
