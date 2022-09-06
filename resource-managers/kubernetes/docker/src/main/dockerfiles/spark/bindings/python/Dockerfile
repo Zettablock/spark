@@ -26,7 +26,7 @@ USER 0
 RUN mkdir ${SPARK_HOME}/python
 RUN apt-get update && \
     apt install -y python3 python3-pip && \
-    pip3 install --upgrade pip setuptools hexbytes web3 && \
+    pip3 install --upgrade pip setuptools requests chardet hexbytes web3 && \
     # Removed the .cache to save space
     rm -r /root/.cache && rm -rf /var/cache/apt/*
 
